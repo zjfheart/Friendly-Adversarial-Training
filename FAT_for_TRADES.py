@@ -208,10 +208,11 @@ for epoch in range(start_epoch, args.epochs):
     loss, cw_acc = attack.eval_robust(model,test_loader, perturb_steps=30, epsilon=0.031, step_size=0.003,loss_fn="cw",category="Madry",rand_init=True)
 
     print(
-        'Epoch: [%d | %d] | Train Time: %.2f s | Natural Train Acc %.2f | Natural Test Acc %.2f | FGSM Test Acc %.2f | PGD20 Test Acc %.2f | CW Test Acc %.2f |\n' % (
+        'Epoch: [%d | %d] | Train Time: %.2f s | BP Average: %.2f | Natural Train Acc %.2f | Natural Test Acc %.2f | FGSM Test Acc %.2f | PGD20 Test Acc %.2f | CW Test Acc %.2f |\n' % (
             epoch + 1,
             args.epochs,
             train_time,
+            bp_count_avg,
             train_nat_acc,
             test_nat_acc,
             fgsm_acc,
@@ -224,6 +225,7 @@ for epoch in range(start_epoch, args.epochs):
     save_checkpoint({
         'epoch': epoch + 1,
         'state_dict': model.state_dict(),
+        'bp_avg' : bp_count_avg,
         'train_nat_acc': train_nat_acc,
         'test_nat_acc': test_nat_acc,
         'train_pgd20_acc': train_pgd20_acc,

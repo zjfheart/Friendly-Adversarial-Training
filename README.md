@@ -138,4 +138,4 @@ We will upload the trained model later!
 
 ## Contact
 
-Please contact j-zhang@comp.nus.edu.sg and 201700301039@mail.sdu.edu.cn if you have any question on the codes.
+Please contact j-zhang@comp.nus.edu.sg and xuxilie@mail.sdu.edu.cn if you have any question on the codes.

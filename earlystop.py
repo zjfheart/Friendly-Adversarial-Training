@@ -5,15 +5,15 @@ import numpy as np
 def earlystop(model, data, target, step_size, epsilon, perturb_steps,tau,randominit_type,loss_fn,rand_init=True,omega=0):
     '''
     The implematation of early-stopped PGD
-    Following the Alg.1 in FAT paper https://arxiv.org/abs/2002.11242
+    Following the Alg.1 in our FAT paper <https://arxiv.org/abs/2002.11242>
     :param step_size: the PGD step size
     :param epsilon: the perturbation bound
     :param perturb_steps: the maximum PGD step
-    :param tau: the minimum PGD step
-    :param randominit_type: To decide the type of random inirialization
-    :param rand_init: To decide whether to initialize adversarial sample with random noise
-    :param omega: random sample parameter for adv data generation
-    :return: friendly adversarial data
+    :param tau: the step controlling how early we should stop interations when wrong adv data is found
+    :param randominit_type: To decide the type of random inirialization (random start for searching adv data)
+    :param rand_init: To decide whether to initialize adversarial sample with random noise (random start for searching adv data)
+    :param omega: random sample parameter for adv data generation (this is for escaping the local minimum.)
+    :return: output_adv (friendly adversarial data) output_target (targets), output_natural (the corresponding natrual data), count (average backword propagations count)
     '''
     model.eval()
 

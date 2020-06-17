@@ -29,7 +29,7 @@ where
 
 Inside, there is maximization where we find **the most adversarial data**. Outside, there is minimization where we find a classifier to fit those generated adversarial data. 
 
-#### The minimax formulation is pessimistic.
+### The minimax formulation is pessimistic.
 
 The minimax-based adversarial training causes the severe degradation of the natural generalization.  Why? 
 The minimax-based adversarial training has a severe cross-over mixture problem: the adversarial data of different classes overshoot into the peer areas. Learning from those adversarial data is very difficult. 

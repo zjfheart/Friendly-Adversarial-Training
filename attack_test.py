@@ -13,6 +13,7 @@ parser.add_argument('--width_factor', type=int, default=10,help='WRN width facto
 parser.add_argument('--drop_rate', type=float,default=0.0, help='WRN drop rate')
 parser.add_argument('--attack_method', type=str,default="dat", help = "choose form: dat and trades")
 parser.add_argument('--model_path', default='./FAT_models/fat_for_trades_wrn34-10_eps0.031_beta1.0.pth.tar', help='model for white-box attack evaluation')
+parser.add_argument('--method',type=str,default='dat',help='select attack setting following DAT or TRADES')
 
 args = parser.parse_args()
 

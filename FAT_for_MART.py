@@ -31,7 +31,7 @@ parser.add_argument('--width-factor', type=int, default=10, help='WRN width fact
 parser.add_argument('--drop-rate', type=float, default=0.0, help='WRN drop rate')
 parser.add_argument('--out-dir',type=str,default='./FAT_for_MART_results',help='dir of output')
 parser.add_argument('--resume', type=bool, default=False, help='whether to resume training')
-parser.add_argument('--resume-path', type=str, default='./FAT_results/checkpoint.pth.tar', help='resume training file')
+parser.add_argument('--resume-path', type=str, default='./FAT_for_MART_results/checkpoint.pth.tar', help='resume training file')
 
 args = parser.parse_args()
 

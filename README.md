@@ -13,7 +13,7 @@ Adversarial training aims to achieve two purposes (a) correctly classify the dat
     <img src="image/adv_train.png" width="650"\>
 </p>
 <p align="center">
-<b>The purposes of the adversarial training
+The purposes of the adversarial training
 </p>
 
 
@@ -37,7 +37,7 @@ The minimax-based adversarial training has a severe cross-over mixture problem: 
     <img src="image/cross_over_mixture_problem.png" width="650"\>
 </p>
 <p align="center">
-<b>Cross-over mixture problem of the minimax-based adversarial training
+Cross-over mixture problem of the minimax-based adversarial training
 </p>
   
 ## Our **min-min formulation** for the adversarial training. 
@@ -52,7 +52,7 @@ Let us look at comparisons between minimax formulation and min-min formulation.
     <img src="image/min-min_vs_minmax.png" width="650"\>
 </p>
 <p align="center">
-<b>Comparisons between minimax formulation and min-min formulation
+Comparisons between minimax formulation and min-min formulation
 </p>
 
 ## A Realization of the Min-min Formulation ---  Friendly Adversarial Training (FAT)
@@ -63,7 +63,7 @@ The early stopped PGD stop the PGD interations once the adversarial data is misc
     <img src="image/early_stopped_pgd.png" width="750"\>
 </p>
 <p align="center">
-<b> Conventional adversarial training employs PGD for searching most adversarial data. Friendly adversarial training employs early stopped PGD for searching friendly adversarial data.
+Conventional adversarial training employs PGD for searching most adversarial data. Friendly adversarial training employs early stopped PGD for searching friendly adversarial data.
 </p>
 
 ## Preferred Prerequisites

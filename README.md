@@ -5,7 +5,7 @@ This repository provides codes for friendly adversarial training (FAT).
 ICML 2020 Paper: **Attacks Which Do Not Kill Training Make Adversarial Learning Stronger** (https://arxiv.org/abs/2002.11242)
 *Jingfeng Zhang\*, Xilie Xu\*, Bo Han, Gang Niu, Lizhen Cui, Masashi Sugiyama and Mohan Kankanhalli*
 
-## What is the nature of the adversarial trianing?
+## What is the nature of the adversarial training?
 Adversarial data can easily fool the standard trained classifier. 
 Adversarial training employs the adversarial data into the training process. 
 Adversarial training aims to achieve two purposes (a) correctly classify the data, and (b) make the decision boundary thick so that no data fall inside the decision boundary. 

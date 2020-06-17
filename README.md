@@ -85,7 +85,7 @@ CUDA_VISIBLE_DEVICES='0' python FAT.py --epsilon 0.062
 | [CAT](https://arxiv.org/abs/1805.04807)   		|  77.43%   	|   57.17%   		|     46.06%    	| 42.28%
 | [DAT](http://proceedings.mlr.press/v97/wang19i/wang19i.pdf)  		|  85.03%  	|     63.53%      |     48.70%     | 47.27%
 | FAT (![](http://latex.codecogs.com/gif.latex?\epsilon=8/255)) |  **89.34**![](http://latex.codecogs.com/gif.latex?\pm)0.221%   	|65.52![](http://latex.codecogs.com/gif.latex?\pm)0.355%| 46.13![](http://latex.codecogs.com/gif.latex?\pm)0.049%| 46.82![](http://latex.codecogs.com/gif.latex?\pm)0.517%
-| FAT (![](http://latex.codecogs.com/gif.latex?\epsilon=8/255))  | 87.00![](http://latex.codecogs.com/gif.latex?\pm)0.203%| **65.94**![](http://latex.codecogs.com/gif.latex?\pm)0.244%|**49.86**![](http://latex.codecogs.com/gif.latex?\pm)0.328%|**48.65**![](http://latex.codecogs.com/gif.latex?\pm)0.176%
+| FAT (![](http://latex.codecogs.com/gif.latex?\epsilon=16/255))  | 87.00![](http://latex.codecogs.com/gif.latex?\pm)0.203%| **65.94**![](http://latex.codecogs.com/gif.latex?\pm)0.244%|**49.86**![](http://latex.codecogs.com/gif.latex?\pm)0.328%|**48.65**![](http://latex.codecogs.com/gif.latex?\pm)0.176%
 
 Results of AT(Madry), CAT and DAT are reported in [DAT](http://proceedings.mlr.press/v97/wang19i/wang19i.pdf). FAT has the same evaluations.
 

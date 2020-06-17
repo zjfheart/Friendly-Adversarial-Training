@@ -79,6 +79,7 @@ CUDA_VISIBLE_DEVICES='0' python FAT.py --epsilon 0.031
 CUDA_VISIBLE_DEVICES='0' python FAT.py --epsilon 0.062
 ```
 #### White-box evaluations on WRN-32-10
+
 | Defense              	| Natural Acc. 	| FGSM Acc. | PGD-20 Acc. | C&W Acc. |
 |-----------------------|-----------------------|------------------|-----------------|-----------------|
 |[AT(Madry)](https://arxiv.org/abs/1706.06083)		| 87.30%	|  56.10%	|     45.80%	    | 46.80%
@@ -99,6 +100,7 @@ CUDA_VISIBLE_DEVICES='0' python FAT_for_MART.py --epsilon 0.031
 CUDA_VISIBLE_DEVICES='0' python FAT_for_MART.py --epsilon 0.062
 ```
 #### White-box evaluations on WRN-34-10
+
 | Defense              	| Natural Acc. 	| FGSM Acc. | PGD-20 Acc. | C&W Acc. |
 |-----------------------|-----------------------|------------------|-----------------|-----------------|
 |[TRADES](https://arxiv.org/abs/1901.08573)(![](http://latex.codecogs.com/gif.latex?\beta=1.0))| 88.64%	|  56.38%	|     49.14%	    | -

@@ -121,7 +121,16 @@ However, in [TRADES’s GitHub](https://github.com/yaodongyu/TRADES), they use r
 We welcome various attack methods to attack our defense models. 
 On both cifar-10 and SVHN dataset, we normalize all images into ```[0,1]```. 
 
-We will upload the trained model later!
+Download our pretrained models into the folder ```FAT_models``` through this [Google Drive link](https://drive.google.com/drive/folders/1lV3qob_zR-YpFVGuKiiE5hNu74NID-ZS?usp=sharing).
+```bash
+cd Friendly-Adversarial-Training
+mkdir FAT_models
+```
+Run robustness evaluations. 
+```bash
+chmod +x attack_test.sh
+./attack_test.sh
+```
 
 ## Reference
 

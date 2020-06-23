@@ -12,7 +12,7 @@ from utils import Logger
 
 parser = argparse.ArgumentParser(description='PyTorch Friendly Adversarial Training for MART')
 parser.add_argument('--epochs', type=int, default=90, metavar='N', help='number of epochs to train')
-parser.add_argument('--weight_decay', '--wd', default=7e-4, type=float, metavar='W')
+parser.add_argument('--weight_decay', '--wd', default=2e-4, type=float, metavar='W')
 parser.add_argument('--lr', type=float, default=0.1, metavar='LR', help='learning rate')
 parser.add_argument('--momentum', type=float, default=0.9, metavar='M', help='SGD momentum')
 parser.add_argument('--epsilon', type=float, default=0.031, help='perturbation bound')
@@ -95,11 +95,11 @@ def train(model, train_loader, optimizer, tau):
 def adjust_tau(epoch, dynamictau):
     tau = args.tau
     if dynamictau:
-        if epoch <= 30:
+        if epoch <= 20:
             tau = 0
-        elif epoch <= 50:
+        elif epoch <= 40:
             tau = 1
-        elif epoch <= 70:
+        elif epoch <= 60:
             tau = 2
         elif epoch <= 80:
             tau = 3
@@ -110,7 +110,7 @@ def adjust_tau(epoch, dynamictau):
 def adjust_learning_rate(optimizer, epoch):
     """decrease the learning rate"""
     lr = args.lr
-    if epoch >= 75:
+    if epoch >= 60:
         lr = args.lr * 0.1
     if epoch >= 90:
         lr = args.lr * 0.01

@@ -115,6 +115,9 @@ CUDA_VISIBLE_DEVICES='0' python FAT_for_MART.py --epsilon 0.062
 Results of TRADES (![](http://latex.codecogs.com/gif.latex?\beta=1.0) and ![](http://latex.codecogs.com/gif.latex?\beta=6.0)) are reported in [TRADES](https://arxiv.org/abs/1901.08573). FAT for TRADES has the same evaluations. Noted that our evaluations of the above are the same as the description in the TRADES's paper, i.e., adversarial data are generated without random start ```rand_init=False```. 
 However, in [TRADES’s GitHub](https://github.com/yaodongyu/TRADES), they use random start ```rand_init=True``` before PGD perturbation that is deviated from the statements in their paper. For the fair evaluations of FAT with random start, please refer to the Table 3 in [our paper](https://arxiv.org/pdf/2002.11242.pdf).
 
+### How to recover original AT, TRADES, or MART? 
+Just set ```tau=10```, e.g., ```python FAT.py --epsilon 0.031 --tau 10```. 
+
 
 ## Want to attack FAT? Sure!
 

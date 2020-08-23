@@ -97,6 +97,7 @@ def earlystop(model, data, target, step_size, epsilon, perturb_steps,tau,randomi
             iter_adv = torch.clamp(iter_adv, 0, 1)
             count += len(iter_target)
         else:
+            output_adv = output_adv.detach()
             return output_adv, output_target, output_natural, count
         K = K-1
 
@@ -108,4 +109,5 @@ def earlystop(model, data, target, step_size, epsilon, perturb_steps,tau,randomi
         output_adv = torch.cat((output_adv, iter_adv.reshape(-1, 3, 32, 32)), dim=0).cuda()
         output_target = torch.cat((output_target, iter_target.reshape(-1)), dim=0).squeeze().cuda()
         output_natural = torch.cat((output_natural, iter_clean_data.reshape(-1, 3, 32, 32).cuda()),dim=0).cuda()
+    output_adv = output_adv.detach()
     return output_adv, output_target, output_natural, count

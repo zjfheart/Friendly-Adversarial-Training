@@ -137,11 +137,11 @@ chmod +x attack_test.sh
 ## Reference
 
 ```
-@article{zhang2020fat,
-  title={Attacks Which Do Not Kill Training Make Adversarial Learning Stronger},
-  author={Zhang, Jingfeng and Xu, Xilie and Han, Bo and Niu, Gang and Cui, Lizhen and Sugiyama, Masashi and Kankanhalli, Mohan},
-  journal={arXiv preprint arXiv:2002.11242},
-  year={2020}
+@inproceedings{zhang2020fat,
+title={Attacks Which Do Not Kill Training Make Adversarial Learning Stronger},
+author={Zhang, Jingfeng and Xu, Xilie and Han, Bo and Niu, Gang and Cui, Lizhen and Sugiyama, Masashi and Kankanhalli, Mohan},
+booktitle = {ICML},
+year={2020}
 }
 ```
 

@@ -116,7 +116,12 @@ Results of TRADES (![](http://latex.codecogs.com/gif.latex?\beta=1.0) and ![](ht
 However, in [TRADES’s GitHub](https://github.com/yaodongyu/TRADES), they use random start ```rand_init=True``` before PGD perturbation that is deviated from the statements in their paper. For the fair evaluations of FAT with random start, please refer to the Table 3 in [our paper](https://arxiv.org/pdf/2002.11242.pdf).
 
 ### How to recover original AT, TRADES, or MART? 
-Just set ```tau=10```, e.g., ```python FAT.py --epsilon 0.031 --tau 10```. 
+Just set ```tau=10```, i.e., 
+```
+python FAT.py --epsilon 0.031 --tau 10 --dynamictau False
+python FAT_for_TRADES --epsilon 0.031 --tau 10 --dynamictau False
+python FAT_for_MART.py --epsilon 0.031 --tau 10 --dynamictau False
+```
 
 
 ## Want to attack FAT? Sure!

@@ -133,9 +133,11 @@ if args.net == "resnet18":
     model = ResNet18().cuda()
     net = "resnet18"
 if args.net == "WRN":
+  # e.g., WRN-34-10
     model = Wide_ResNet(depth=args.depth, num_classes=10, widen_factor=args.width_factor, dropRate=args.drop_rate).cuda()
     net = "WRN{}-{}-dropout{}".format(args.depth, args.width_factor, args.drop_rate)
 if args.net == 'WRN_madry':
+  # e.g., WRN-32-10
     model = Wide_ResNet_Madry(depth=args.depth, num_classes=10, widen_factor=args.width_factor, dropRate=args.drop_rate).cuda()
     net = "WRN_madry{}-{}-dropout{}".format(args.depth, args.width_factor, args.drop_rate)
 print(net)

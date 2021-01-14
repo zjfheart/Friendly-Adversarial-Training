@@ -49,7 +49,7 @@ def earlystop(model, data, target, step_size, epsilon, perturb_steps,tau,randomi
 
         # Calculate the indexes of adversarial data those still needs to be iterated
         for idx in range(len(pred)):
-            if pred[idx] != target[idx]:
+            if pred[idx] != iter_target[idx]:
                 if control[idx] == 0:
                     output_index.append(idx)
                 else:

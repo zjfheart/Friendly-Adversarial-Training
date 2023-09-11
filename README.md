@@ -152,4 +152,4 @@ year={2020}
 
 ## Contact
 
-Please contact jingfeng.zhang@riken.jp (preferred) OR j-zhang@comp.nus.edu.sg and xuxilie@mail.sdu.edu.cn if you have any question on the codes.
+Please contact jingfeng.zhang@auckland.ac.nz (preferred) OR jingfeng.zhang9660@gmail.com and xuxilie@mail.sdu.edu.cn if you have any question on the codes.

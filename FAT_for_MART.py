@@ -217,3 +217,5 @@ for epoch in range(start_epoch, args.epochs):
         'test_pgd20_acc': test_pgd20_acc,
         'optimizer': optimizer.state_dict(),
     })
+logger_test.log()
+plt.show()

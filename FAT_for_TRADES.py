@@ -3,6 +3,7 @@ import argparse
 import torchvision
 import torch.optim as optim
 from torchvision import transforms
+import matplotlib.pyplot as plt
 import datetime
 from models import *
 from earlystop import earlystop
@@ -209,3 +210,5 @@ for epoch in range(start_epoch, args.epochs):
         'test_pgd20_acc': test_pgd20_acc,
         'optimizer': optimizer.state_dict(),
     })
+logger_test.log()
+plt.show()
